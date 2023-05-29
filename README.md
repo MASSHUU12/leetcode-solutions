@@ -1,1 +1,3 @@
-# [Leetcode Solutions](https://leetcode.com/problemset/all/)
+# LeetCode Solutions
+
+Solutions for [LeetCode problems](https://leetcode.com/problemset/all/).

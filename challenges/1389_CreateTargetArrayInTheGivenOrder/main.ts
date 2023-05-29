@@ -4,10 +4,7 @@ function createTargetArray(nums: number[], index: number[]): number[] {
   const target: number[] = [];
 
   for (let i = 0; i < nums.length; i++) {
-    const num = nums[i];
-    const idx = index[i];
-
-    target.splice(idx, 0, num);
+    target.splice(index[i], 0, nums[i]);
   }
 
   return target;

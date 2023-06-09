@@ -1,13 +1,9 @@
 function minPartitions(n: string): number {
-  let max = 0;
-
-  for (let i = 0; i < n.length; i++) {
-    const num = parseInt(n.charAt(i));
-
-    if (num > max) max = num;
+  for (let i = 9; i > 0; i--) {
+    if (n.includes(i.toString())) return i;
   }
 
-  return max;
+  return -1;
 }
 
 console.log(minPartitions("82734"));

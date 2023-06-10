@@ -7,14 +7,13 @@ public:
   std::vector<int> getConcatenation(std::vector<int> &nums)
   {
     const int size = nums.size();
-    std::vector<int> ans(size << 1);
 
-    for (size_t i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
-      ans[i] = ans[i + size] = nums[i];
+      nums.push_back(nums[i]);
     }
 
-    return ans;
+    return nums;
   }
 };
 
